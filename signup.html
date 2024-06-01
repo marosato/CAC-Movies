@@ -60,7 +60,135 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-md-offset-4">
+                <div
+                    class="card mb-3 shadow-sm border-0 rounded-2 d-flex align-items-center position-absolute top-50 start-50 translate-middle">
+                    <div class="card-body p-4">
+                        <form class="registerForm">
+                            <h1 class="form-signin-heading mb-4"> Registro </h1>
 
+                            <label for="inputName" class="sr-only"> Nombre </label>
+                            <input type="text" id="inputName" class="form-control rounded-5" placeholder="Nombre"
+                                required>
+
+                            <label for="inputLastName" class="sr-only"> Apellido </label>
+                            <input type="text" id="inputLastName" class="form-control rounded-5" placeholder="Apellido"
+                                required>
+
+                            <label for="inputEmail" class="sr-only"> Email </label>
+                            <input type="email" id="inputEmail" class="form-control rounded-5" placeholder="Email"
+                                required autofocus pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+
+                            <label for="inputPassword" class="sr-only"> Contraseña </label>
+                            <input type="password" id="inputPassword" class="form-control rounded-5"
+                                placeholder="Contraseña" required>
+
+                            <label for="inputDate" class="sr-only"> Fecha de nacimiento </label>
+                            <input type="text" id="inputDate" class="form-control rounded-5" placeholder="dd/mm/aaaa"
+                                required>
+
+                            <label for="inputCountry" class="sr-only"> País </label>
+                            <select id="inputCountry" class="form-control rounded-5" required>
+                                <option value="">Seleccione un país</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Perú">Perú</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Venezuela">Venezuela</option>
+                            </select>
+
+                            <div class="form-check">
+                                <input type="checkbox" id="termsAndConditions" class="form-check-input" required>
+                                <label for="termsAndConditions" class="form-check-label">Acepto términos y
+                                    condiciones</label>
+                            </div>
+
+                            <button class="btn btn-lg btn-primary btn-block mt-1 mb-2 rounded-1 logIn" type="submit">
+                                Registrarse
+                            </button>
+
+                            <a href="#" class="signUp text-start"> Necesitas ayuda? </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <br><br><br><br>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-md-offset-4">
+                <div
+                    class="card mb-3 shadow-sm border-0 rounded-2 d-flex align-items-center position-absolute top-50 start-50 translate-middle">
+                    <div class="card-body p-4">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-4 position-relative">
+                                <label for="validationTooltip01" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4 position-relative">
+                                <label for="validationTooltip02" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4 position-relative">
+                                <label for="validationTooltipUsername" class="form-label">Username</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                    <input type="text" class="form-control" id="validationTooltipUsername"
+                                        aria-describedby="validationTooltipUsernamePrepend" required>
+                                    <div class="invalid-tooltip">
+                                        Please choose a unique and valid username.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 position-relative">
+                                <label for="validationTooltip03" class="form-label">City</label>
+                                <input type="text" class="form-control" id="validationTooltip03" required>
+                                <div class="invalid-tooltip">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-3 position-relative">
+                                <label for="validationTooltip04" class="form-label">State</label>
+                                <select class="form-select" id="validationTooltip04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>...</option>
+                                </select>
+                                <div class="invalid-tooltip">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-3 position-relative">
+                                <label for="validationTooltip05" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="validationTooltip05" required>
+                                <div class="invalid-tooltip">
+                                    Please provide a valid zip.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Submit form</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
 </body>
 
 </html>
