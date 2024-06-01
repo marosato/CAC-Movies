@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -61,7 +61,8 @@
 
 <body>
     <!-- NAV BAR -->
-    <header class="nav-bar d-flex flex-wrap justify-content-center py-3 mb-4 fixed-top" style="background-color: #9f3647;">
+    <header class="nav-bar d-flex flex-wrap justify-content-center py-3 mb-4 fixed-top"
+        style="background-color: #9f3647;">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
             <svg class="bi me-2" width="40" height="32">
                 <use xlink:href="#bootstrap"></use>
@@ -69,12 +70,16 @@
             <span class="fw-bold fs-4"> CAC-Movies </span>
         </a>
         <div class="text-end d-grid gap-2 d-md-flex justify-content-md-end">
-            <button class="nav-button btn me-md-2 fw-bold rounded-2" type="button"> Tendencias </button>
-            <button class="nav-button btn me-md-2 fw-bold rounded-2" type="button"> Registrarse </button>
-            <button class="nav-button btn btn-dark me-md-2 fw-bold border-0 rounded-2" type="button"> Iniciar Sesión </button>
-            <a href="registerForm.html">
-                <button class="nav-button btn btn-dark me-5 fw-bold border-0 rounded-2" type="button"> Conexión API </button>
+            <a href="#trending">
+                <button class="nav-button btn me-md-2 fw-bold rounded-2" type="button"> Tendencias </button>
             </a>
+            <button class="nav-button btn me-md-2 fw-bold rounded-2" type="button"
+                onclick="location.href='signup.html';"> Registrarse </button>
+            <button class="nav-button btn btn-dark me-md-2 fw-bold border-0 rounded-2" type="button"
+                onclick="location.href='login.html';"> Iniciar Sesión
+            </button>
+            <button class="nav-button btn btn-dark me-5 fw-bold border-0 rounded-2" type="button"> Conexión API
+            </button>
         </div>
     </header>
 
@@ -479,7 +484,7 @@
     </div>
 
     <!-- TRENDING -->
-    <div class="container mb-5">
+    <section class="trending container mb-5" id="trending">
         <!-- Featurette divider -->
         <hr class="featurette-divider" style="border: 2px solid #9f3647;">
         <h1 class="py-3 mb-1 mx-auto"> Las tendencias de hoy </h1>
@@ -568,7 +573,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
     <br>
@@ -594,7 +599,8 @@
                         <a href="#" class="nav-link px-2 text-body-secondary"> Ayuda </a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-dark me-5 fw-bold border-0 rounded-2" type="button"> Administrador Peliculas </button>
+                        <button class="btn btn-dark me-5 fw-bold border-0 rounded-2" type="button"> Administrador
+                            Peliculas </button>
                         <a href="#" class="nav-link px-2 text-body-secondary"> Administrador Peliculas </a>
                     </li>
                 </ul>
