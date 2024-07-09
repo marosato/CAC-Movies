@@ -69,56 +69,42 @@ hr {
     margin-bottom: 10px;
 }
 
-.form-control input[type="email"],
-.form-control input[type="password"] {
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.form-control input[type="email"]:focus,
-.form-control input[type="password"]:focus {
-    border-color: #aaa;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
-
-
-
 
 
 .card {
     background-color: rgb(42, 42, 42) !important;
-    width: 25rem ;
+    width: 25rem;
     height: 30rem;
     margin: 0 auto;
 }
-
-.registerForm {
-    margin: 100px 0 100px 0;
-    width: 300px; 
-}
-
-
 
 .card h1 {
     font-weight: bold;
     text-align: left;
 }
 
+.card .registerForm {
+    margin: 100px 0 100px 0;
+    width: 300px;
+}
+
 .card .registerForm label {
     color: var(--bs-primary);
 }
 
-.card .registerForm input, .card .registerForm .form-control {
-    border-width: 2px;
+.card .registerForm .form-control,
+.card .registerForm input {
     border-color: var(--bs-primary);
+    border-width: 2px;
+    border-radius: 1.2rem;
     background-color: rgb(51, 51, 51);
     color: var(--bs-secondary-color);
 }
+
+
+
+
+
 
 .card .registerForm .logIn {
     width: 100%;

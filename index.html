@@ -7,19 +7,15 @@
     <link rel="stylesheet" href="main.css">
     <title> CAC-MOVIES </title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-        </script>
 
     <!-- Details -->
     <meta name="theme-color" content="#ff0095">
     <meta name="description" content="Aquí va una breve descripción acerca del trabajo práctico.">
     <link rel="canonical" href="https://.netlify.app/"> <!-- Página Original -->
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="favicon.png">
@@ -57,9 +53,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">
 
+
+    <!-- MASONRY (Integration) -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+
 </head>
 
 <body>
+
+
     <!-- NAV BAR -->
     <header class="nav-bar d-flex flex-wrap justify-content-center py-3 mb-4 fixed-top"
         style="background-color: #9f3647;">
@@ -471,23 +475,39 @@
                 <h3 class="title"> </h3>
             </div>
         </div>
+
         <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
                 <li class="page-item">
-                    <a class="page-link">Previous</a>
+                    <a href="#" class="page-link"> Anterior </a>
                 </li>
                 <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
+                    <a href="#" class="page-link"> Siguiente </a>
                 </li>
             </ul>
         </nav>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link">Anterior</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Siguiente</a>
+                </li>
+            </ul>
+        </nav>
+
     </div>
 
     <!-- TRENDING -->
     <section class="trending container mb-5" id="trending">
         <!-- Featurette divider -->
         <hr class="featurette-divider" style="border: 2px solid #9f3647;">
-        <h1 class="py-3 mb-1 mx-auto"> Las tendencias de hoy </h1>
+        <h1 class="py-3 mb-1 mx-auto"> Las más aclamadas </h1>
         <div class="visible-scrollbar">
             <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-5 col-md-11 mx-auto"> -->
             <div class="d-flex row-cols-md-6 gap-5 mb-3 p-4 mx-auto">
@@ -575,20 +595,147 @@
         </div>
     </section>
 
-
-    <br>
-
     <!-- BACK TO TOP -->
     <a href="#" class="back-to-top position-fixed bottom-0 end-0 p-3" role="button" aria-label="Ir arriba"
         id="back-to-top">
         <img src="Archivos/Icon - BackToTop.png" alt="Arrow Up" width="35" height="auto">
     </a>
 
+
+
+
+    <form class="bd-example">
+        <fieldset>
+          <legend>Example legend</legend>
+          <p>
+            <label for="input">Example input</label>
+            <input type="text" id="input" placeholder="Example input">
+          </p>
+          <p>
+            <label for="email">Example email</label>
+            <input type="email" id="email" placeholder="test@example.com">
+          </p>
+          <p>
+            <label for="tel">Example telephone</label>
+            <input type="tel" id="tel">
+          </p>
+          <p>
+            <label for="url">Example url</label>
+            <input type="url" id="url">
+          </p>
+          <p>
+            <label for="number">Example number</label>
+            <input type="number" id="number">
+          </p>
+          <p>
+            <label for="search">Example search</label>
+            <input type="search" id="search">
+          </p>
+          <p>
+            <label for="range">Example range</label>
+            <input type="range" id="range" min="0" max="10">
+          </p>
+          <p>
+            <label for="file">Example file input</label>
+            <input type="file" id="file">
+          </p>
+          <p>
+            <label for="select">Example select</label>
+            <select id="select">
+              <option value="">Choose...</option>
+              <optgroup label="Option group 1">
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+              </optgroup>
+              <optgroup label="Option group 2">
+                <option value="">Option 4</option>
+                <option value="">Option 5</option>
+                <option value="">Option 6</option>
+              </optgroup>
+            </select>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" value="">
+              Check this checkbox
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+              Option one is this and that
+            </label>
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+              Option two is something else that's also super long to demonstrate the wrapping of these fancy form controls.
+            </label>
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="">
+              Option three is disabled
+            </label>
+          </p>
+          <p>
+            <label for="textarea">Example textarea</label>
+            <textarea id="textarea" rows="3"></textarea>
+          </p>
+          <p>
+            <label for="date">Example date</label>
+            <input type="date" id="date">
+          </p>
+          <p>
+            <label for="time">Example time</label>
+            <input type="time" id="time">
+          </p>
+          <p>
+            <label for="password">Example password</label>
+            <input type="password" id="password">
+          </p>
+          <p>
+            <label for="datetime-local">Example datetime-local</label>
+            <input type="datetime-local" id="datetime-local">
+          </p>
+          <p>
+            <label for="week">Example week</label>
+            <input type="week" id="week">
+          </p>
+          <p>
+            <label for="month">Example month</label>
+            <input type="month" id="month">
+          </p>
+          <p>
+            <label for="color">Example color</label>
+            <input type="color" id="color">
+          </p>
+          <p>
+            <label for="output">Example output</label>
+            <output name="result" id="output">100</output>
+          </p>
+          <p>
+            <button type="submit">Button submit</button>
+            <input type="submit" value="Input submit button">
+            <input type="reset" value="Input reset button">
+            <input type="button" value="Input button">
+          </p>
+          <p>
+            <button type="submit" disabled="">Button submit</button>
+            <input type="submit" value="Input submit button" disabled="">
+            <input type="reset" value="Input reset button" disabled="">
+            <input type="button" value="Input button" disabled="">
+          </p>
+        </fieldset>
+      </form>
+
+
+
+
+
+
     <!-- FOOTER -->
-    <footer class="py-4">
+    <footer class="footer py-4">
         <div class="row">
             <div class="col-md-12">
-                <ul class="nav justify-content-center">
+                <ul class="nav justify-content-center fw-bold">
                     <li class="nav-item">
                         <a href="#" class="nav-link px-2 text-body-secondary"> Términos y condiciones </a>
                     </li>
@@ -598,16 +745,20 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link px-2 text-body-secondary"> Ayuda </a>
                     </li>
+
                     <li class="nav-item">
-                        <button class="btn btn-dark me-5 fw-bold border-0 rounded-2" type="button"> Administrador
-                            Peliculas </button>
-                        <a href="#" class="nav-link px-2 text-body-secondary"> Administrador Peliculas </a>
+                        <a href="#" class="btn btn-dark px-2 text-body-secondary me-5 rounded-2 border-0 fw-bold"
+                            role="button"> Administrador Peliculas </a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
 
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

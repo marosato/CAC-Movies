@@ -14,34 +14,6 @@ body {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-head {
-  display: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 * {
-  text-align: center;
-  color: var(--bs-secondary-color) !important;
-  font-family: var(--bs-font-sans-serif) !important;
-}
-
-p {
-  color: var(--bs-secondary-color) !important;
-  text-wrap: balance;
-}
-
-hr {
-  border: 2px solid var(--bs-primary) !important;
-}
-
 /* ===== Scrollbar ===== */
 
 /* Firefox */
@@ -71,6 +43,37 @@ hr {
   display: block;
   overflow: auto;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+head {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 * {
+  text-align: center;
+  color: var(--bs-secondary-color) !important;
+  font-family: var(--bs-font-sans-serif) !important;
+  font-weight: bold !important;
+}
+
+p {
+  color: var(--bs-secondary-color) !important;
+  text-wrap: balance;
+}
+
+hr {
+  border: 2px solid var(--bs-primary) !important;
+}
+
+
 
 /* ===== Nav Bar ===== */
 
@@ -111,8 +114,6 @@ hr {
   border: none;
 }
 
-
-
 /*  ----------------------------------------
     |             M O V I E S              |
     ----------------------------------------  */
@@ -146,8 +147,6 @@ hr {
 .grid:hover h3 {
   opacity: 1;
 }
-
-
 
 
 
