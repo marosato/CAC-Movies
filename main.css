@@ -109,10 +109,30 @@ hr {
   transition-delay: 400ms; */
 }
 
-.home-button a, .home-button a:hover {
+.home-button a,
+.home-button a:hover {
   background-color: #9f3647;
   border: none;
 }
+
+
+.search-bar form input {
+  color: var(--bs-secondary-color) !important;
+}
+
+.search-bar form .btn-custom, .search-bar form .btn-custom:hover {
+  background-color: #9f3647;
+  color: var(--bs-secondary-color);
+  border-color: #fff;
+  border-width: 3px;
+}
+
+
+
+
+
+
+
 
 /*  ----------------------------------------
     |             M O V I E S              |
