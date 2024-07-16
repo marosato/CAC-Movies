@@ -120,19 +120,13 @@ hr {
   color: var(--bs-secondary-color) !important;
 }
 
-.search-bar form .btn-custom, .search-bar form .btn-custom:hover {
+.search-bar form .btn-custom,
+.search-bar form .btn-custom:hover {
   background-color: #9f3647;
   color: var(--bs-secondary-color);
   border-color: #fff;
   border-width: 3px;
 }
-
-
-
-
-
-
-
 
 /*  ----------------------------------------
     |             M O V I E S              |
@@ -166,6 +160,41 @@ hr {
 
 .grid:hover h3 {
   opacity: 1;
+}
+
+
+
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.page-item {
+  /* margin: 0 5px; */
+}
+
+.page-link {
+  background-color: var(--bs-primary) !important;
+  color: var(--bs-secondary-color) !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.page-link:hover {}
+
+.page-item.disabled .page-link {
+  background-color: var(--bs-primary) !important;
+  color: var(--bs-body-bg);
+  cursor: not-allowed;
+}
+
+.page-item.active .page-link {
+  color: #23527c;
+  font-weight: bold;
 }
 
 
