@@ -77,7 +77,7 @@ hr {
 
 .navbar {
   background-color: var(--bs-primary) !important;
-  color: var(--bs-secondary-color);
+    color: var(--bs-secondary-color);
 }
 
 .navbar .navbar-brand,

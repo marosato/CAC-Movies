@@ -263,18 +263,19 @@
                 </div>
             </div>
 
+
             <script>
-                // Seleccionamos todas las imágenes con la clase img-fluid
-                const images = document.querySelectorAll('.img-fluid');
+                // Seleccionamos todos los elementos con la clase "grid"
+                const grids = document.querySelectorAll('.grid');
 
-                // Agregamos un evento de clic a cada imagen
-                images.forEach((image) => {
-                    image.addEventListener('click', (event) => {
-                        // Seleccionamos el título correspondiente a la imagen clickeada
-                        const title = event.target.nextElementSibling;
+                // Agregamos un evento de clic a cada elemento
+                grids.forEach((grid) => {
+                    grid.addEventListener('click', (event) => {
+                        // Seleccionamos el título correspondiente
+                        const title = grid.querySelector('.title');
 
-                        // Toggleamos la clase show para mostrar u ocultar el título
-                        title.classList.toggle('show');
+                        // Mostramos u ocultamos el título según su estado actual
+                        title.classList.toggle('hidden');
                     });
                 });
             </script>
