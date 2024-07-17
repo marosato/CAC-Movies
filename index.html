@@ -262,6 +262,22 @@
                     <h3 class="title"> Alienoid </h3>
                 </div>
             </div>
+
+            <script>
+                // Seleccionamos todas las imágenes con la clase img-fluid
+                const images = document.querySelectorAll('.img-fluid');
+
+                // Agregamos un evento de clic a cada imagen
+                images.forEach((image) => {
+                    image.addEventListener('click', (event) => {
+                        // Seleccionamos el título correspondiente a la imagen clickeada
+                        const title = event.target.nextElementSibling;
+
+                        // Toggleamos la clase show para mostrar u ocultar el título
+                        title.classList.toggle('show');
+                    });
+                });
+            </script>
         </article>
 
         <!-- Página 2 -->
