@@ -131,17 +131,19 @@ hr {
   color: var(--bs-secondary-color) !important;
 }
 
-.search-bar .form-control {
+.search-bar form .form-control {
   width: 450px;
+  height: 60px;
   font-size: 18px;
   padding: 25px;
   border-color: var(--bs-secondary-color);
   border-width: 3px;
+  background-color: var(--bs-body-bg);
 }
 
 .search-bar form .btn-custom,
 .search-bar form .btn-custom:hover {
-  background-color: #9f3647;
+  background-color: var(--bs-primary);
   color: var(--bs-secondary-color);
   border-color: var(--bs-secondary-color);
   border-width: 3px;
