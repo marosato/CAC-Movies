@@ -83,6 +83,12 @@ hr {
 .navbar .navbar-brand:hover {
   color: var(--bs-secondary-color);
   text-decoration: none;
+  
+}
+
+.navbar .collapse li a {
+  color: var(--bs-secondary-color) !important;
+  text-align: center;
 }
 
 
