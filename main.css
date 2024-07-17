@@ -73,9 +73,20 @@ hr {
   border: 2px solid var(--bs-primary) !important;
 }
 
-
-
 /* ===== Nav Bar ===== */
+
+.navbar {
+  background-color: var(--bs-primary) !important;
+}
+
+.navbar .navbar-brand, .navbar .navbar-brand:hover {
+  color: var(--bs-secondary-color);
+  text-decoration: none;
+}
+
+
+
+
 
 .nav-bar span {
   color: var(--bs-secondary-color) !important;
@@ -196,6 +207,24 @@ hr {
   color: #23527c;
   font-weight: bold;
 }
+
+
+
+
+
+
+
+#movie-details {
+  background-image: url(https://media.themoviedb.org/t/p/w300_and_h450_bestv2/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+#movie-img {
+  filter: blur(5px);
+}
+
 
 
 
