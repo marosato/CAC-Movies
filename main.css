@@ -77,18 +77,17 @@ hr {
 
 .navbar {
   background-color: var(--bs-primary) !important;
+  color: var(--bs-secondary-color);
 }
 
 .navbar .navbar-brand,
 .navbar .navbar-brand:hover {
   color: var(--bs-secondary-color);
   text-decoration: none;
-  
 }
 
 .navbar .collapse li a {
   color: var(--bs-secondary-color) !important;
-
 }
 
 
