@@ -73,6 +73,18 @@ hr {
   border: 2px solid var(--bs-primary) !important;
 }
 
+
+
+/* ===== Movie Details ===== */
+
+.movie-details {
+  background: linear-gradient(to right top, #6d6969a7, #504b4ba7), url('https://static1.srcdn.com/wordpress/wp-content/uploads/2019/10/Harry-Potter-Stone-header.jpg');
+  background-size: cover;
+  background-position: cover;
+  background-repeat: no-repeat;
+  color: var(--bs-secondary-color);
+}
+
 /* ===== Nav Bar ===== */
 
 .navbar {
@@ -90,60 +102,9 @@ hr {
   color: var(--bs-secondary-color) !important;
 }
 
-/*  ------------------------------------
-      |             H O M E              |
-      ------------------------------------  */
-
-.home {
-  background-image: url(Archivos/Portada.jpg);
-  background-size: cover;
-  background-position: center;
-  /* transform: scale(1) rotateX(0);
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-    -webkit-transition: all 300ms linear;
-    transition: all 300ms linear;
-    -webkit-transition-delay: 400ms;
-    transition-delay: 400ms; */
-}
-
-.home-button a,
-.home-button a:hover {
-  background-color: #9f3647;
-  border: none;
-}
-
-.search-bar form input {
-  color: var(--bs-secondary-color) !important;
-}
-
-.search-bar form .btn-custom,
-.search-bar form .btn-custom:hover {
-  background-color: #9f3647;
-  color: var(--bs-secondary-color);
-  border-color: #fff;
-  border-width: 3px;
-}
-
-/* ===== Movie Details ===== */
-
-
-.background {
-  background: linear-gradient(to right top, #6d6969a7, #504b4ba7), url('https://static1.srcdn.com/wordpress/wp-content/uploads/2019/10/Harry-Potter-Stone-header.jpg');
-  background-size: cover;
-  background-position: cover;
-  background-repeat: no-repeat;
-  filter: blur(2px);
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
 /* ===== Social Media ===== */
 
-#social-media a ul{
+#social-media a ul {
   display: inline-block;
   font-size: 20px;
   color: var(--bs-primary) !important;
@@ -176,7 +137,9 @@ hr {
 
 /* ===== Movie Table ===== */
 
-table thead th, tbody th, tbody td {
+table thead th,
+tbody th,
+tbody td {
   background-color: var(--bs-body-bg) !important;
   color: var(--bs-secondary-color) !important;
 }
