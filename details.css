@@ -124,23 +124,20 @@ hr {
   border-width: 3px;
 }
 
-
+/* ===== Movie Details ===== */
 
 #movie-details {
   background-image: url(https://media.themoviedb.org/t/p/w300_and_h450_bestv2/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg);
   background-size: cover;
   background-position: center;
+  color: var(--bs-secondary-color);
 }
-
 
 #movie-img {
   filter: blur(5px);
 }
 
-
-
-
-
+/* ===== Social Media ===== */
 
 #social-media a ul{
   display: inline-block;
@@ -172,6 +169,8 @@ hr {
   color: var(--bs-primary) !important;
 } */
 
+
+/* ===== Movie Table ===== */
 
 table thead th, tbody th, tbody td {
   background-color: var(--bs-body-bg) !important;
