@@ -126,15 +126,19 @@ hr {
 
 /* ===== Movie Details ===== */
 
-#movie-details {
-  background-image: url(https://media.themoviedb.org/t/p/w300_and_h450_bestv2/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg);
-  background-size: cover;
-  background-position: center;
-  color: var(--bs-secondary-color);
-}
 
-#movie-img {
-  filter: blur(5px);
+.background {
+  background: linear-gradient(to right top, #6d6969a7, #504b4ba7), url('https://static1.srcdn.com/wordpress/wp-content/uploads/2019/10/Harry-Potter-Stone-header.jpg');
+  background-size: cover;
+  background-position: cover;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /* ===== Social Media ===== */
