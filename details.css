@@ -58,10 +58,8 @@ h3,
 h4,
 h5,
 h6 * {
-  text-align: center;
   color: var(--bs-secondary-color) !important;
   font-family: var(--bs-font-sans-serif) !important;
-  font-weight: bold !important;
 }
 
 p {
@@ -83,6 +81,11 @@ hr {
   background-position: cover;
   background-repeat: no-repeat;
   color: var(--bs-secondary-color);
+}
+
+.movie-details .title-synopsis {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 
