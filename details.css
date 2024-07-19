@@ -71,8 +71,6 @@ hr {
   border: 2px solid var(--bs-primary) !important;
 }
 
-
-
 /* ===== Movie Details ===== */
 
 .movie-details {
@@ -87,7 +85,6 @@ hr {
   font-weight: bold;
   text-decoration: underline;
 }
-
 
 /* ===== Nav Bar ===== */
 
@@ -116,7 +113,7 @@ hr {
 }
 
 #social-media a svg {
-  width: 40px;
+  width: 35px;
   height: auto;
   color: var(--bs-secondary-color) !important;
   transition: color 0.24s ease-in;
