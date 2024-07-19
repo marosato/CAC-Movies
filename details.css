@@ -113,7 +113,7 @@ hr {
 }
 
 #social-media a svg {
-  width: 35px;
+  width: 40px;
   height: auto;
   color: var(--bs-secondary-color) !important;
   transition: color 0.24s ease-in;
