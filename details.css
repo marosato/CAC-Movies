@@ -73,7 +73,7 @@ hr {
 
 /* ===== Movie Details ===== */
 
-.movie-details {
+.movie-description {
   background: linear-gradient(to right top, #6d6969a7, #504b4ba7), url('https://static1.srcdn.com/wordpress/wp-content/uploads/2019/10/Harry-Potter-Stone-header.jpg');
   background-size: cover;
   background-position: cover;
@@ -81,7 +81,7 @@ hr {
   color: var(--bs-secondary-color);
 }
 
-.movie-details .title-synopsis {
+.movie-description .title-synopsis {
   font-weight: bold;
   text-decoration: underline;
 }
